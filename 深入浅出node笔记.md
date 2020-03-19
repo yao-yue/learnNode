@@ -111,3 +111,27 @@ Buffer主要用于操作字节。Buffer对象类似于数组，元素为16进制
 node网络模块： net-TCP  dgram-UDP  http https
 ### TCP
 服务器事件。对于net.createServer()创建的服务器而言，它是一个EventEmitter实例
+
+
+## 第八章 构建Web应用
+Cookie
+服务端 set-Cookie的一些配置：
+path: 表示这个Cookie影响到的路径，当前访问的路径不满足该匹配时，浏览器则不发送这个Cookie
+Expires\max-Age
+HttpOnly: 
+Secure: 仅在HTTPS中才有效，设为true时，只能在HTTPS连接中才会被浏览器传递到服务端进行会话验证。
+
+
+## 第九章 玩转进程
+服务器模型的变迁： 同步 -> 复制进程 -> 多线程 -> 事件驱动      
+多线程架构： Master-Worker架构 child-process模块
+进程间通信：通过onmessage()和postMessage()进行通信
+- 进程间通信原理：进程间通信的方式-管道、socket、信号量、共享内存、消息队列、
+- Node实现IPC通道的方式是管道，具体细节由libuv提供
+- 主进程监听主端口80,主进程对外接收所有的网络请求，再将这些请求分别代理到不同端口的子进程上。
+cluster： 也是处理多进程的一个模块
+
+## 第十章 单元测试
+
+## 第十一章 产品化
+部署、 打包构建
