@@ -26,7 +26,9 @@
 
 console.table({
     '/bin': '存放系统命令',
+
     '/sbin': '保存于系统环境设置相关的命令',
+    
     '/usr/bin': '存放系统命令的目录',
     '/usr/sbin/': '存放根文件系统不必要的系统管理命令',
     '/boot': '系统启动目录',
@@ -40,5 +42,4 @@ console.table({
     '/misc/': '挂在目录, 挂在NFS服务共享目录',
     '/root': 'root的宿主目录,普通用户是home',
     '/usr': '系统软件资源目录 usr:unix software resource',
-    '/usr/'
 })
