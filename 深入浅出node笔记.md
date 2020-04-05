@@ -26,6 +26,9 @@ I/O密集型  CPU密集型
 
 ### 包与NPM
 commonJS之类的模块规范，一定程度上解决了变量依赖、依赖关系等代码组织性问题，包的出现则是在模块的基础上进异步组织了js代码。package.json 包描述文件，里面的依赖描述表达了这个包引用了别的什么包。
+npm install -g全局安装
+(1) 将安装包放在 /usr/local 下或者你 node 的安装目录。
+(2)可以直接在命令行里使用。
 
 ### AMD规范和CMD规范
 amd规范，即异步模块定义  define(id, dependencies, factory)
